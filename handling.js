@@ -95,8 +95,5 @@ $(document).ready(function () { // when the document loads this will execute
                 console.log('O wins!');
             }
         }
-
     });
-
-
 });
