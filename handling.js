@@ -14,12 +14,15 @@ $(document).ready(function () { // when the document loads this will execute
         console.log(array_position);
 
         if (player_1 === 0) { // here the conditional will trigger if the global value of the player is equal to 0
+            $(this).text('X');
             $(this).addClass('X'); // if player1 clicks then it adds a class 'x' to the div of
             input_array[array_position][subArray_position] = 'X';
             player_1 = 1;
             console.log(input_array);
+
         }
         else {
+            $(this).text('O');
             $(this).addClass('O');
             input_array[array_position][subArray_position] = 'O';
             player_1 = 0;
@@ -29,7 +32,7 @@ $(document).ready(function () { // when the document loads this will execute
             console.log(input_array.length);
         }
 
-        //--------this is the win condition------------
+        //--------this is the vertical win condition------------
         if (input_array.length >= 3) {
 
 
@@ -39,19 +42,58 @@ $(document).ready(function () { // when the document loads this will execute
             else if (input_array[0][0] === "O" && input_array[0][1] === "O" && input_array[0][2] === "O") {
                 console.log('O wins!');
             }
-            else if (input_array[0][1] === "X" && input_array[1][1] === "X" && input_array[2][1] === "X") {
+            else if (input_array[1][0] === "X" && input_array[1][1] === "X" && input_array[1][2] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[1][0] === "O" && input_array[1][1] === "O" && input_array[1][2] === "O") {
                 console.log('O wins!');
+            }
+            else if (input_array[2][0] === "X" && input_array[2][1] === "X" && input_array[2][2] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[2][0] === "O" && input_array[2][1] === "O" && input_array[2][2] === "O") {
+                console.log('O wins!');
+            }
+
+
+
+            //-------diagonal win conditions----
+            else if (input_array[0][0] === "X" && input_array[1][1] === "X" && input_array[2][2] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[0][0] === "O" && input_array[1][1] === "O" && input_array[2][2] === "O") {
+                console.log('O wins!');
+            }
+            //---------other diagonal-------
+            else if (input_array[2][0] === "X" && input_array[1][1] === "X" && input_array[0][2] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[2][0] === "O" && input_array[1][1] === "O" && input_array[0][2] === "O") {
+                console.log('O wins!');
+            }
+
+
+
+
+            //-----horizontal win conditions----
+            else if (input_array[0][0] === "X" && input_array[1][0] === "X" && input_array[2][0] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[0][0] === "O" && input_array[1][0] === "O" && input_array[2][0] === "O") {
+                console.log('O wins!');
+            }
+            else if (input_array[0][1] === "X" && input_array[1][1] === "X" && input_array[2][1] === "X") {
+                console.log('X wins!');
             }
             else if (input_array[0][1] === "O" && input_array[1][1] === "O" && input_array[2][1] === "O") {
                 console.log('O wins!');
             }
             else if (input_array[0][2] === "X" && input_array[1][2] === "X" && input_array[2][2] === "X") {
-                console.log('O wins!');
+                console.log('X wins!');
             }
             else if (input_array[0][2] === "O" && input_array[1][2] === "O" && input_array[2][2] === "O") {
                 console.log('O wins!');
             }
-            
         }
 
     });
