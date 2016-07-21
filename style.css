@@ -1,3 +1,25 @@
+/*STATUS BAR // HEADER */
+header {
+    height: 180px;
+    background-color: red;
+}
+/*header > div {*/
+    /*positon:relative;*/
+    /*display: inline-block;*/
+    /*width:700px;*/
+    /*height:200px;*/
+/*}*/
+/*.troll1{*/
+    /*width:100%;*/
+    /*height: 100%;*/
+    /*position: relative;*/
+/*}*/
+.troll2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: scaleX(-1)
+}
 /*GAME AREA*/
 #gameboard {
     position: relative;
@@ -6,7 +28,7 @@
     width: 600px;
     left: 50%;
     transform: translate(-50%);
-    top: 15vh;
+    top: 10vh;
     font-size: 0;
     box-shadow: 0 0 40px 15px black;
 }
@@ -51,7 +73,7 @@ button {
     font-family: "Palatino Linotype", Georgia;
     height: 463px;
     text-align: center;
-    top: 150px;
+    top: 250px;
 
 }
 
