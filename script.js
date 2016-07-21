@@ -12,7 +12,7 @@ $(document).ready(function () {
         create_board(4);
         $('#theModal').modal('hide');
     });
-    // $('#theModal').modal('show');
+    $('#theModal').modal('show');
 });
 
 /*FUNCTIONS*/
