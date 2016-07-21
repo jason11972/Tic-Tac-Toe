@@ -18,27 +18,19 @@ body {
     font-size: 0;
 }
 #gameboard > * {
-    font-size: initial;
+    font-size: 100px;
 }
 .threebythreebox {
     display: inline-block;
-    background-color: blue;
     height: 33.3%;
     width: 33.3%;
-    margin: 0;
-    font-size: 126px;
-    opacity: 0.5;
     text-align: center;
 }
 
 .fourbyfourbox {
     display: inline-block;
-    background-color: blue;
     height: 25%;
     width: 25%;
-    margin: 0;
-    font-size: 126px;
-    opacity: 0.5;
     text-align: center;
 }
 
