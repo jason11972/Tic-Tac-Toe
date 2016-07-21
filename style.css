@@ -1,8 +1,8 @@
-
+/*GAME AREA*/
 #gameboard {
     position: relative;
     display: inline-block;
-    height: 600px;
+    height: 598px;
     width: 600px;
     left: 50%;
     transform: translate(-50%);
@@ -10,12 +10,14 @@
     font-size: 0;
     box-shadow: 0 0 40px 15px black;
 }
+
 #gameboard > * {
     font-size: 100px;
 }
+
 .threebythreebox {
     display: inline-block;
-    height: 33.3%;
+    height: 33.5%;
     width: 33.3%;
     text-align: center;
     vertical-align: top;
@@ -28,7 +30,12 @@
     width: 25%;
     text-align: center;
     vertical-align: top;
-    border: 2px solid black;
+    border: 1px solid black;
+}
+
+div > img {
+    width: 100%;
+    height: 90%;
 }
 
 /*BUTTON ONLY DELETE*/
@@ -39,29 +46,71 @@ button {
 
 /*MODAL SETTINGS*/
 .modal-content {
-    background-color: lightslategrey;
+    box-shadow: 0 0 17px 4px white;
     font-size: 2em;
-    font-family: Georgia, Arial;
-    height: 60vh;
+    font-family: "Palatino Linotype", Georgia;
+    height: 463px;
     text-align: center;
+    top: 150px;
 
 }
 
 .modal-header {
+    color: white;
+    background-color: black;
     text-align: center;
-    text-shadow: 3px 3px 5px white;
     font-weight: bold;
 }
 
 .modal-body {
-    color:black;
+    position: relative;
 }
 
-.modal-footer  {
-    text-align: left;
+.player1pic {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    right: 10%;
+    top: 5vh;
 }
 
-div > img {
-    width:100%;
-    height:95%;
+.versus{
+    display: inline-block;
+    position: relative;
+    height: 150px;
+    width: 140px;
+    right: 4%;
+}
+
+.versus img {
+    height: 100%;
+    width: 120%;
+}
+.player2pic {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 11%;
+    top: 5vh;
+}
+
+#trollMaster {
+    background-color: black;
+    color: red;
+}
+
+#threebythree {
+    margin: 10px 10px 0 0;
+
+}
+
+#fourbyfour {
+    margin-top: 10px;
+}
+
+.modal-footer {
+    background-color: black;
+    height: 70px;
 }

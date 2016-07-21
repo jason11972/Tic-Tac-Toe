@@ -1,16 +1,16 @@
 var clicked = false;
-var modal = {
-  'backdrop': 'true',
-  'keyboard': 'true'
-};
+
+
 $(document).ready(function () {
-    $('.tbt').click(function(){
+    $('#threebythree').click(function(){
         remove_board();
         create_board(3);
+        $('#theModal').modal('hide');
     });
-    $('.fbf').click(function(){
+    $('#fourbyfour').click(function(){
         remove_board();
         create_board(4);
+        $('#theModal').modal('hide');
     });
     $('#theModal').modal('show');
 });
