@@ -21,10 +21,10 @@ function create_board(num) { //CREATE BOARD
     for (var i = 0; i < (num * num); i++) {
         if (num > 3) { // CONDITIONAL WILL CHECK TO CREATE 3X3 OR 4X4 BOARD
 
-            var boardblock = $('<div>').attr('id', i).addClass('tic_div fourbyfourbox').text('O');
+            var boardblock = $('<div>').attr('id', i).addClass('tic_div fourbyfourbox');
             $('#gameboard').append(boardblock);
         } else {
-            var boardblock = $('<div>').attr('id', i).addClass('tic_div threebythreebox').text('X');
+            var boardblock = $('<div>').attr('id', i).addClass('tic_div threebythreebox');
 
             $('#gameboard').append(boardblock);
         }

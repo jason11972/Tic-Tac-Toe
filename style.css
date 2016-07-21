@@ -25,6 +25,7 @@ body {
     height: 33.3%;
     width: 33.3%;
     text-align: center;
+    vertical-align: top;
 }
 
 .fourbyfourbox {
@@ -32,6 +33,7 @@ body {
     height: 25%;
     width: 25%;
     text-align: center;
+    vertical-align: top;
 }
 
 /*BUTTON ONLY DELETE*/
