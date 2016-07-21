@@ -13,36 +13,35 @@
 </head>
 <body>
 <header id=""></header>
-    <div class="modal fade" id="theModal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <p class="modal-title">Welcome to Tic-Tac-TROLOLOLOLOLO</p>
+<div class="modal fade" id="theModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="modal-title">Welcome to Tic-Tac-TROLOLOLOLOLO</p>
+            </div>
+            <div class="modal-body">
+                <div class="player1pic">
+                    <img src="images/player1.jpg" alt="player 1 pic">
+                    <p>Player 1</p>
                 </div>
-                <div class="modal-body">
-                    <input type="text" placeholder="PLAYER 1 NAME">
-                    <br>
-                    <input type="text" placeholder="PLAYER 2 NAME">
-                    <br>
-                    <button type="button" id="cpu"><label for="cpu">TROLOLO MASTER</label></button>
-                    <br>
-                    <input type="radio" value="3" id="boardsize"><label for="boardsize">3X3</label>
-                    <br>
-                    <input type="radio" value="4" id="boardsize"><label for="boardsize">4X4</label>
+                <div class="versus">
+                    <img src="images/versus.png" alt="versus">
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <div class="player2pic">
+                    <img src="images/player2.jpg" alt="player 2 pic">
+                    <p>Player 2</p>
                 </div>
+                <button type="button" id="trollMaster">PICK TROLOLO MASTER</button>
+                <br>
+                <button type="button" id="threebythree">3X3</button>
+                <button type="button" id="fourbyfour">4X4</button>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
     </div>
-
-<button type="button" class="tbt" value="3">3x3</button>
-<button type="button" class="fbf" value="4">4x4</button>
-
+</div>
 <div id="gameboard">
-
 </div>
 
 </body>
