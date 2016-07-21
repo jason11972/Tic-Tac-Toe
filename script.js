@@ -14,10 +14,11 @@ $(document).ready(function () {
 function create_board(num) { //CREATE BOARD
     for (var i = 0; i < (num * num); i++) {
         if (num > 3) { // CONDITIONAL WILL CHECK TO CREATE 3X3 OR 4X4 BOARD
-            var boardblock = $('<div>').addClass('fourbyfourbox').text('O');
+            var position = i;
+            var boardblock = $('<div>').attr('id',i).addClass('tic_div fourbyfourbox').text('O');
             $('#gameboard').append(boardblock);
         } else {
-            var boardblock = $('<div>').addClass('threebythreebox').text('X');
+            var boardblock = $('<div>').attr('id',i).addClass('tic_div threebythreebox').text('X');
             $('#gameboard').append(boardblock);
         }
     }
