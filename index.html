@@ -3,23 +3,45 @@
 <head>
     <meta name="tictactoe" content="c9 hackathon tictactoe">
     <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="handling.js"></script>
+    <script src="c9tictactoe.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
+    <div class="modal fade" id="theModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <p class="modal-title">Welcome to Tic-Tac-TROLOLOLOLOLO</p>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="PLAYER 1 NAME">
+                    <br>
+                    <input type="text" placeholder="PLAYER 2 NAME">
+                    <br>
+                    <button type="button" id="cpu"><label for="cpu">TROLOLO MASTER</label></button>
+                    <br>
+                    <input type="radio" value="3" id="boardsize"><label for="boardsize">3X3</label>
+                    <br>
+                    <input type="radio" value="4" id="boardsize"><label for="boardsize">4X4</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <button type="button" class="tbt" value="3">3x3</button>
 <button type="button" class="fbf" value="4">4x4</button>
+
 <div id="gameboard">
-    <!--<div class="t1">o</div>-->
-    <!--<div class="t2">o</div>-->
-    <!--<div class="t3">o</div>-->
-    <!--<div class="m1">o</div>-->
-    <!--<div class="m2">o</div>-->
-    <!--<div class="m3">o</div>-->
-    <!--<div class="b1">o</div>-->
-    <!--<div class="b2">o</div>-->
-    <!--<div class="b3">o</div>-->
+
 </div>
 
 </body>
