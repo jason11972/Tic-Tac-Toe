@@ -2,18 +2,8 @@ body {
     height: 90vh;
     width: 90vw;
     position: relative;
-    font-size: 0;
 
-}
-.fourbyfourbox {
-    display: inline-block;
-    background-color: blue;
-    height: 25%;
-    width: 25%;
-    margin: 0;
-    font-size: 126px;
-    opacity: 0.5;
-    text-align: center;
+
 }
 
 #gameboard {
@@ -25,6 +15,10 @@ body {
     left: 50%;
     transform: translate(-50%);
     top: 15vh;
+    font-size: 0;
+}
+#gameboard > * {
+    font-size: initial;
 }
 .threebythreebox {
     display: inline-block;
@@ -36,8 +30,44 @@ body {
     opacity: 0.5;
     text-align: center;
 }
+
+.fourbyfourbox {
+    display: inline-block;
+    background-color: blue;
+    height: 25%;
+    width: 25%;
+    margin: 0;
+    font-size: 126px;
+    opacity: 0.5;
+    text-align: center;
+}
+
 /*BUTTON ONLY DELETE*/
-button{
+button {
     position: relative;
     display: inline-block;
+}
+
+/*MODAL SETTINGS*/
+.modal-content {
+    background-color: lightslategrey;
+    font-size: 2em;
+    font-family: Georgia, Arial;
+    height: 60vh;
+    text-align: center;
+
+}
+
+.modal-header {
+    text-align: center;
+    text-shadow: 3px 3px 5px white;
+    font-weight: bold;
+}
+
+.modal-body {
+    color:black;
+}
+
+.modal-footer  {
+    text-align: left;
 }

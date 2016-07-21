@@ -9,8 +9,8 @@ var input_array = [[],[],[]];
 $(document).ready(function () { // when the document loads this will execute
     $('.tic_div').one('click', function () { //then a click handler for all board divs will be declared
         var clicked_div = $(this); // the handler will assign whichever div was clicked to the clicked_div variable
-        var array_position = $(this).attr('class').split(' ')[2];
-        var subArray_position = $(this).attr('class').split(' ')[1];
+        var array_position = $(this).attr('class').split(' ')[0];
+        var subArray_position = $(this).attr('class').split(' ')[0];
         console.log(array_position);
 
         if (player_1 === 0) { // here the conditional will trigger if the global value of the player is equal to 0
