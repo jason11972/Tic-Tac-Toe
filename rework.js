@@ -87,5 +87,81 @@ $(document).ready(function () {   // when the document loads this will execute
                 console.log('O wins!');
             }
         }
+
+
+//-------this is win condition for 4x4 grid -----------
+ //--------this is the vertical win condition------------
+        if (input_array.length >= 7) {
+            if (input_array[0] === "X" && input_array[4] === "X" && input_array[8] === "X" && input_array[12] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[0]=== "O" && input_array[4] === "O" && input_array[8] === "O" && input_array[12] === "O") {
+                console.log('O wins!');
+            }
+            else if (input_array[1] === "X" && input_array[5] === "X" && input_array[9] === "X" && input_array[13] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[1] === "O" && input_array[5] === "O" && input_array[9] === "O" && input_array[13] === "O") {
+                console.log('O wins!');
+            }
+            else if (input_array[2] === "X" && input_array[6] === "X" && input_array[10] === "X" && input_array[14] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[2] === "O" && input_array[6] === "O" && input_array[10] === "O" && input_array[14] === "O") {
+                console.log('O wins!');
+            }
+            else if (input_array[3] === "X" && input_array[7] === "X" && input_array[11] === "X" && input_array[15] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[3] === "O" && input_array[7] === "O" && input_array[11] === "O" && input_array[15] === "O") {
+                console.log('O wins!');
+            }
+
+
+
+            //-------diagonal win conditions----
+            else if (input_array[0] === "X" && input_array[5] === "X" && input_array[10] === "X" && input_array[15] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[0] === "O" && input_array[5] === "O" && input_array[10] === "O" && input_array[15] === "O") {
+                console.log('O wins!');
+            }
+            //---------other diagonal-------
+            else if (input_array[3] === "X" && input_array[6] === "X" && input_array[9] === "X" && input_array[12] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[3] === "O" && input_array[6] === "O" && input_array[9] === "O" && input_array[12] === "O") {
+                console.log('O wins!');
+            }
+
+
+
+
+            //-----horizontal win conditions----
+            else if (input_array[0] === "X" && input_array[1] === "X" && input_array[2] === "X" && input_array[3] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[0] === "O" && input_array[1] === "O" && input_array[2] === "O" && input_array[3] === "O") {
+                console.log('O wins!');
+            }
+            else if (input_array[4] === "X" && input_array[5] === "X" && input_array[6] === "X" && input_array[7] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[4] === "O" && input_array[5] === "O" && input_array[6] === "O" && input_array[7] === "O") {
+                console.log('O wins!');
+            }
+            else if (input_array[8] === "X" && input_array[9] === "X" && input_array[10] === "X" && input_array[11] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[8] === "O" && input_array[9] === "O" && input_array[10] === "O" && input_array[11] === "O") {
+                console.log('O wins!');
+            }
+            else if (input_array[12] === "X" && input_array[13] === "X" && input_array[14] === "X" && input_array[15] === "X") {
+                console.log('X wins!');
+            }
+            else if (input_array[12] === "O" && input_array[13] === "O" && input_array[14] === "O" && input_array[15] === "O") {
+                console.log('O wins!');
+            }
+        }
     });
 });
