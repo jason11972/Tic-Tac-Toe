@@ -10,23 +10,18 @@
     <script src="c9tictactoe.js"></script>
     <script src="script.js"></script>
     <script src="rework.js"></script>
+
 </head>
 <body>
 <header id="statbar">
-    <!--<div>-->
-        <!--<div class="troll1">-->
-            <!--<img src="images/hmm.jpg" alt="hmm">-->
-        <!--</div>-->
-        <!--<span>-->
-        <!---->
-        <!--</span>-->
-        <!--<span>-->
-        <!---->
-        <!--</span>-->
-        <!--<div class="troll2">-->
-            <!--<img src="images/yuno.jpg" alt="creeps">-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="statbar">
+        <div class="player1name">
+            PLAYER 1
+        </div>
+        <div class="player2name">
+            PLAYER 2
+        </div>
+    </div>
 </header>
 <div class="modal fade" id="theModal" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
@@ -59,5 +54,14 @@
 <div id="gameboard">
 </div>
 
+<audio id="bgm">
+    <source src="sound/zelda.mp3" type="audio/mpeg">
+</audio>
+<audio id="challenger">
+    <source src="sound/newchalleneger.wav" type="audio/wav">
+</audio>
+<audio id="smack">
+    <source src="sound/smack.wav" type="audio/wav">
+</audio>
 </body>
 </html>
