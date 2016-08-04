@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # c9_tictactoe
 
 ### REQUIREMENTS
@@ -20,3 +21,6 @@
 - Project lead fork this repo
 - Add other team members as participants on your repo (click on the + in the top right corner, then "add collaborators"
 - Other team members clone the repo from the project lead's fork
+=======
+# Tic-Tac-Toe
+>>>>>>> ad6ce008d6954b748bdefe585de6bf5607589685

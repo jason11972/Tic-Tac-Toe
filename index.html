@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="tictactoe" content="c9 hackathon tictactoe">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="c9tictactoe.js"></script>
+    <script src="script.js"></script>
+    <script src="rework.js"></script>
+
+</head>
+<body>
+<header id="statbar">
+    <div class="statbar">
+        <div class="player1name">
+            PLAYER 1
+        </div>
+        <div class="player2name">
+            PLAYER 2
+        </div>
+    </div>
+</header>
+<div class="modal fade" id="theModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="modal-title">Welcome to Tic-Tac-TROLOLOLOLOLO</p>
+            </div>
+            <div class="modal-body">
+                <div class="player1pic">
+                    <img src="images/player1.jpg" alt="player 1 pic">
+                    <p>Player 1</p>
+                </div>
+                <div class="versus">
+                    <img src="images/versus.png" alt="versus">
+                </div>
+                <div class="player2pic">
+                    <img src="images/player2.jpg" alt="player 2 pic">
+                    <p>Player 2</p>
+                </div>
+                <button type="button" id="trollMaster">PICK TROLOLO MASTER</button>
+                <br>
+                <button type="button" id="threebythree">3X3</button>
+                <button type="button" id="fourbyfour">4X4</button>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="gameboard">
+</div>
+
+<audio id="bgm">
+    <source src="sound/zelda.mp3" type="audio/mpeg">
+</audio>
+<audio id="challenger">
+    <source src="sound/newchalleneger.wav" type="audio/wav">
+</audio>
+<audio id="smack">
+    <source src="sound/smack.wav" type="audio/wav">
+</audio>
+</body>
+</html>

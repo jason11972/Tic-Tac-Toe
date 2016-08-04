@@ -1,0 +1,155 @@
+/*STATUS BAR // HEADER */
+header {
+    height: 150px;
+}
+.statbar {
+    height: 180px;
+    width: 75vw;
+    display: inline-block;
+    position: relative;
+    left: 13%;
+}
+
+header > div {
+    display: inline-block;
+    font-size:3em;
+    color: black;
+    font-family: "Palatino Linotype", Georgia;
+}
+.player1name {
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+
+}
+.player2name {
+    display: inline-block;
+    position: absolute;
+    left: 77%;
+}
+/*GAME AREA*/
+#gameboard {
+    position: relative;
+    display: inline-block;
+    height: 598px;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 6vh;
+    font-size: 0;
+    box-shadow: 0 0 40px 15px black;
+}
+
+#gameboard > div > img {
+    width:100%;
+    height:90%;
+}
+
+#gameboard > * {
+    font-size: 100px;
+}
+
+.threebythreebox {
+    display: inline-block;
+    height: 33.5%;
+    width: 33.3%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.fourbyfourbox {
+    display: inline-block;
+    height: 25%;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.player1pic > img {
+    width: 100%;
+    height: 90%;
+}
+
+.player2pic > img {
+    width: 100%;
+    height: 90%;
+}
+
+/*BUTTON ONLY DELETE*/
+button {
+    position: relative;
+    display: inline-block;
+}
+
+/*MODAL SETTINGS*/
+.modal-content {
+    box-shadow: 0 0 17px 4px white;
+    font-size: 2em;
+    font-family: "Palatino Linotype", Georgia;
+    height: 463px;
+    text-align: center;
+    top: 250px;
+
+}
+
+.modal-header {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-body {
+    position: relative;
+}
+
+.player1pic {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    right: 10%;
+    top: 5vh;
+}
+
+.versus{
+    display: inline-block;
+    position: relative;
+    height: 150px;
+    width: 140px;
+    right: 4%;
+}
+
+.versus img {
+    height: 100%;
+    width: 120%;
+}
+.player2pic {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 11%;
+    top: 5vh;
+}
+
+#trollMaster {
+    background-color: black;
+    color: red;
+}
+
+#threebythree {
+    margin: 10px 10px 0 0;
+
+}
+
+#fourbyfour {
+    margin-top: 10px;
+}
+
+.modal-footer {
+    background-color: black;
+    height: 70px;
+}
