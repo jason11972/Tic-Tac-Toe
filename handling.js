@@ -1,6 +1,4 @@
-/**
- * Created by njporter10 on 7/20/16.
- */
+
 var player_1 = 0;
 var input_array = [[],[],[]];
 
